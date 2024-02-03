@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Youth Project || SMA YP UNILA</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback"
+    />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css" />
+    <!-- Ionicons -->
+    <link
+      rel="stylesheet"
+      href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link
+      rel="stylesheet"
+      href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css"
+    />
+    <!-- iCheck -->
+    <link
+      rel="stylesheet"
+      href="plugins/icheck-bootstrap/icheck-bootstrap.min.css"
+    />
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css" />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css" />
+    <!-- overlayScrollbars -->
+    <link
+      rel="stylesheet"
+      href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css"
+    />
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css" />
+    <!-- summernote -->
+    <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css" />
+  </head>
+  <body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+      <!-- Preloader -->
+      <div
+        class="preloader flex-column justify-content-center align-items-center"
+      >
+        <img
+          class="animation__shake"
+          src="dist/img/youth_project.png"
+          alt="AdminLTELogo"
+          height="150"
+          width="150"
+        />
+      </div>
+
+      <!-- Navbar -->
+      <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <!-- Left navbar links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"
+              ><i class="fas fa-bars"></i
+            ></a>
+          </li>
+          <li class="nav-item d-none d-sm-inline-block">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.navbar -->
+
+      <!-- Main Sidebar Container -->
+      <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-link">
+          <img
+            src="dist/img/youth_project.png"
+            alt="AdminLTE Logo"
+            class="brand-image img-circle elevation-3"
+            style="opacity: 0.8"
+          />
+          <span class="brand-text font-weight-light">Youth Project</span>
+        </a>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <!-- SidebarSearch Form -->
+          <!-- Sidebar Menu -->
+          <nav class="mt-2">
+            <ul
+              class="nav nav-pills nav-sidebar flex-column"
+              data-widget="treeview"
+              role="menu"
+              data-accordion="false"
+            >
+              <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+              <li class="nav-item menu-open">
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="./index.html" class="nav-link ">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Dashboard</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="jkjn/daftarjkjn.html" class="nav-link">
+                      <i class="nav-icon fas fa-th"></i>
+                      <p>
+                        Juklak Juknis Perlombaan
+                        <span class="bottom badge badge-danger">Dokumen</span>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./registrasi.html" class="nav-link active">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Registrasi</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./login.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Login Sebagai Panitia</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+      </aside>
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+          <div class="container-fluid">
+            <div class="row mb-2">
+              <div class="col-sm-6">
+                <h1 class="m-0">
+                  Registrasi Lomba Youth Project VIII SMA YP UNILA
+                </h1>
+              </div>
+              <!-- /.col -->
+              <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item active">Registrasi</li>
+                </ol>
+              </div>
+              <!-- /.col -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+        <!-- /.content-header -->
+
+        <!-- Main content -->
+        <section class="content">
+          <div class="container-fluid">
+            <!-- SELECT2 EXAMPLE -->
+            <div class="card card-default">
+                <div class="card-header">
+                  <h3 class="card-title">Registrasi</h3>
+                </div>
+                <!-- /.card-header -->
+              <form method="post">
+                <!-- ini masalah div -->
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-sm-6">
+
+                        <div class="form-group">
+                          <div class="form"></div>
+                          <label>Pilih Cabang Lomba</label>
+                          <select class="form-control select2" style="width: 100%">
+                            <option selected="selected">Photography</option>
+                            <option>Basketball</option>
+                            <option>Tari Kreasi</option>
+                            <option>solo song</option>
+                            <option>vlog</option>
+                            <option>Futsal</option>
+                            <option>Scrabble</option>
+                          </select>
+                        </div>
+                        <!-- /.form-group -->
+                      </div>
+                      <!-- /.col -->
+
+                      <!-- /.col -->
+                    </div>
+                    
+                    <!-- ini masalah div  -->
+                    <div class="row">  
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label>Lengkapi Data Peserta lomba </label>
+                            <div class="card-body">
+                              <div class="form-group">
+                                <label for="name">Nama Lengkap</label>
+                                <input
+                                  type="text"
+                                  name="name"
+                                  class="form-control"
+                                  id="name"
+                                  placeholder="Masukan Nama Lengkap"
+                                  required
+                                />
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleInputPassword1"
+                                  >Jenis Kelamin</label
+                                >
+                                <div class="row mb-3">
+                                  <div
+                                    class="form-check form-check-inline col-sm-6 col-md-8"
+                                  >
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="jenis_kelamin"
+                                        id="laki"
+                                        value="Laki-Laki"
+                                        required
+                                      />
+                                      <label class="form-check-label" for="laki"
+                                        >Laki - Laki
+                                      </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="jenis_kelamin"
+                                        id="perempuan"
+                                        value="Perempuan"
+                                        required
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="perempuan"
+                                      >
+                                        Perempuan</label
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div>
+                                <label for="name">Asal Sekolah</label>
+                                <select
+                                name="sekolah"
+                                class="form-control"
+                                id="sekolah"
+                                
+                                >
+                                <option value="">Pilih Asal Sekolah</option>
+                              </select>
+                            </div>
+                              
+                              <div class="form-group">
+                                <label for="name">No. Whatsapp</label>
+                                <input
+                                  type="number"
+                                  name="nowhatsapp"
+                                  class="form-control"
+                                  id="nowhatsapp"
+                                  placeholder="+62xxx"
+                                  required
+                                />
+                              </div>
+                              <div class="form-group">
+                                <label for="foto">Upload Pas Foto</label>
+                                <input 
+                                accept="image/png, image/gif, image/jpeg"
+                                type="file" 
+                                class="form-control"
+                                id="foto"
+                                required
+                                >
+                              </div>
+                              <div class="form-group">
+                                <label for="file">Upload Kartu Pelajar atau surat rekomendasi</label>
+                                <input 
+                                accept="application/pdf" 
+                                type="file" 
+                                class="form-control"
+                                id="file"
+                                required
+                                >
+                              </div>
+                             
+                              
+                              
+                                  <!-- Biaya pendaftaran berubah ketika memilih cabang perlombaan  -->
+                                  <div class="form-group">
+                                    <label for="biaya">Biaya Pendaftaran</label>
+                                    <input
+                                    disabled
+                                      type="number"
+                                      name="nowhatsapp"
+                                      class="form-control"
+                                      id="nowhatsapp"
+                                      placeholder="Rp. 80.000"
+                                      required
+                                    />
+                                  </div>
+
+                                  <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" 
+                                    type="checkbox" 
+                                    id="customCheckbox1" 
+                                    value="option1">
+                                    <label 
+                                    for="customCheckbox1" 
+                                    class="custom-control-label">Dengan ini saya telah membaca, mengetahui, memahami, serta akan mematuhi juklak juknis
+                                    yang berlaku dan saya bersedia menjadi peserta dalam acara Youth Project VIII
+                                  </label>
+                                  </div>
+                                  <br>
+                                  <button type="submit" class="btn btn-warning">
+                                    <strong>
+                                      Daftar & Pilih Metode pembayaran
+                                    </strong>
+                                    <a href="#"></a>
+                                  </button>
+                                  
+                                </div>
+                                <!-- /.card-body -->
+                                <!-- <div class="card-footer"> -->
+                                  
+                                </div>
+                              </div>
+                            </form>
+                            
+                          </div>
+                        </div>
+                      
+                          
+                
+
+                <section class="content">
+                  <div class="container-fluid">
+                    <!-- SELECT2 EXAMPLE -->
+                    <div class="card card-default">
+                      <div class="card-header">
+                        <h3 class="card-title">Registrasi Basketball</h3>
+
+                      </div>
+                      <!-- /.card-header -->
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <form method="post">
+
+                              <div class="form-group">
+                                <label for="exampleInputPassword1"
+                                  >Pilih Kategori Perlombaan Basketball</label
+                                >
+                                <div class="row mb-3">
+                                  <div
+                                    class="form-check form-check-inline col-sm-6 col-md-8"
+                                  >
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="jenis_kelamin"
+                                        id="laki"
+                                        value="Laki-Laki"
+                                        required
+                                      />
+                                      <label class="form-check-label" for="laki"
+                                        >Basketball Laki-Laki
+                                      </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="jenis_kelamin"
+                                        id="perempuan"
+                                        value="Perempuan"
+                                        required
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="perempuan"
+                                      >
+                                        Basketball Perempuan</label
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div>
+                                <label for="name">Asal Sekolah</label>
+                                <select
+                                name="sekolah"
+                                class="form-control"
+                                id="sekolah"
+                                
+                                >
+                                <option value="">Pilih Asal Sekolah</option>
+                              </select>
+                            </div>
+
+                              <div class="form-group">
+                                <label>Coach</label>
+                                <input 
+                                type="text"
+                                name="coach"
+                                class="form-control"
+                                id="coach"
+                                placeholder="Masukan Nama Lengkap Pelatih"
+                                required
+                                >
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleInputPassword1"
+                                  >Jenis Kelamin</label
+                                >
+                                <div class="row mb-3">
+                                  <div
+                                    class="form-check form-check-inline col-sm-6 col-md-8"
+                                  >
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="jenis_kelamin"
+                                        id="laki"
+                                        value="Laki-Laki"
+                                        required
+                                      />
+                                      <label class="form-check-label" for="laki"
+                                        >Laki - Laki
+                                      </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="jenis_kelamin"
+                                        id="perempuan"
+                                        value="Perempuan"
+                                        required
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="perempuan"
+                                      >
+                                        Perempuan</label
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- /.form-group -->
+                              <div class="form-group">
+                                <label>Official</label>
+                                <input 
+                                type="text"
+                                name="Official"
+                                class="form-control"
+                                id="Official"
+                                placeholder="Masukan Nama Lengkap Official (Perwakilan saja)"
+                                required>
+                            </div>
+                            <div class="form-group">
+                              <label>Captain</label>
+                              <input 
+                              type="text"
+                              name="captain"
+                              class="form-control"
+                              id="Official"
+                              placeholder="Masukan Nama Lengkap Captain"
+                              required>
+                          </div>
+
+                          <div class="form-group">
+                            <label>No. Whatsapp Captain</label>
+                            <input 
+                            type="number"
+                            name="nocaptain"
+                            class="form-control"
+                            id="nocaptain"
+                            placeholder="+62xxxx"
+                            required>
+                        </div>
+
+                          <div class="form-group">
+                            <label>Upload Pass Foto Captain</label>
+                            <input 
+                            accept="image/png, image/gif, image/jpeg"
+                            type="file"
+                            name="fotocapt"
+                            class="form-control"
+                            id="fotocapt"
+                            
+                            required>
+                        </div>
+
+                        <div class="form-group">
+                          <label>Upload Surat Izin Atau Rekomendasi Dari Sekolah</label>
+                          <input 
+                          accept="application/pdf"
+                          type="file"
+                          name="suratizin"
+                          class="form-control"
+                          id="suratizin"
+                        
+                          required>
+
+                          <div class="form-group">
+                            <label>Nama Pemain 1</label>
+                            <input type="text" 
+                            name="namabasket1" 
+                            id="namabasket1"
+                            class="form-control"
+                            placeholder="Masukan Nama Lengkap Pemain 1"
+                            required
+                            >
+                          </div>
+
+                          <div class="form-group">
+                            <label>Upload Pass Foto Pemain 1</label>
+                            <input 
+                            accept="image/png, image/gif, image/jpeg"
+                            type="file"
+                            name="fotopemainbasket1"
+                            class="form-control"
+                            id="fotopemainbasket1"
+                            
+                            required>
+                        </div>
+
+                        <div class="form-group">
+                          <label>Nama Pemain 2</label>
+                          <input type="text" 
+                          name="namabasket2" 
+                          id="namabasket2"
+                          class="form-control"
+                          placeholder="Masukan Nama Lengkap Pemain 2"
+                          required
+                          >
+                        </div>
+
+                        <div class="form-group">
+                          <label>Upload Pass Foto Pemain 2</label>
+                          <input 
+                          accept="image/png, image/gif, image/jpeg"
+                          type="file"
+                          name="fotopemainbasket2"
+                          class="form-control"
+                          id="fotopemainbasket2"
+                          
+                          required>
+                      </div>
+
+
+
+                      </div>
+                      <!-- Biaya pendaftaran berubah ketika memilih cabang perlombaan  -->
+                      <div class="form-group">
+                        <label for="biaya">Biaya Pendaftaran</label>
+                        <input
+                        disabled
+                          type="number"
+                          name="nowhatsapp"
+                          class="form-control"
+                          id="nowhatsapp"
+                          placeholder="Rp. 80.000"
+                          required
+                        />
+                      </div>
+
+                      <div class="form-group">
+                        <label>Nama Pemain 3</label>
+                        <input type="text" 
+                        name="namabasket3" 
+                        id="namabasket3"
+                        class="form-control"
+                        placeholder="Masukan Nama Lengkap Pemain 3"
+                        required
+                        >
+                        
+                      </div>
+
+                      <div class="form-group">
+                        <label>Upload Pass Foto Pemain 3</label>
+                        <input 
+                        accept="image/png, image/gif, image/jpeg"
+                        type="file"
+                        name="fotopemainbasket3"
+                        class="form-control"
+                        id="fotopemainbasket3"
+                        
+                        required>
+                    </div>
+
+                            <!-- /.form-group -->
+                          </div>
+                          <!-- /.col -->
+                          <div class="col-md-6">
+                          
+                        
+
+                            <div class="form-group">
+                              <label>Nama Pemain 4</label>
+                              <input type="text" 
+                              name="namabasket4" 
+                              id="namabasket4"
+                              class="form-control"
+                              placeholder="Masukan Nama Lengkap Pemain 4"
+                              required
+                              >
+                              
+                            </div>
+
+
+                            <div class="form-group">
+                              <label>Upload Pass Foto Pemain 4</label>
+                              <input 
+                              accept="image/png, image/gif, image/jpeg"
+                              type="file"
+                              name="fotopemainbasket4"
+                              class="form-control"
+                              id="fotopemainbasket4"
+                              
+                              required>
+                          </div>
+
+                            <div class="form-group">
+                              <label>Nama Pemain 5</label>
+                              <input type="text" 
+                              name="namabasket5" 
+                              id="namabasket5"
+                              class="form-control"
+                              placeholder="Masukan Nama Lengkap Pemain 5"
+                              required
+                              >
+                              
+                            </div>
+
+                            <div class="form-group">
+                              <label>Upload Pass Foto Pemain 5</label>
+                              <input 
+                              accept="image/png, image/gif, image/jpeg"
+                              type="file"
+                              name="fotopemainbasket5"
+                              class="form-control"
+                              id="fotopemainbasket5"
+                              
+                              required>
+                          </div>
+
+
+                            <div class="form-group">
+                              <label>Nama Pemain 6 (Optional)</label>
+                              <input type="text" 
+                              name="namabasket6" 
+                              id="namabasket6"
+                              class="form-control"
+                              placeholder="Masukan Nama Lengkap Pemain 6"
+                              
+                              >
+                              
+                            </div>
+
+                            <div class="form-group">
+                              <label>Upload Pass Foto Pemain 6 (Optional)</label>
+                              <input 
+                              accept="image/png, image/gif, image/jpeg"
+                              type="file"
+                              name="fotopemainbasket6"
+                              class="form-control"
+                              id="fotopemainbasket6"
+                              
+                              >
+                          </div>
+
+                            <div class="form-group">
+                              <label>Nama Pemain 7 (Optional)</label>
+                              <input type="text" 
+                              name="namabasket7" 
+                              id="namabasket7"
+                              class="form-control"
+                              placeholder="Masukan Nama Lengkap Pemain 7"
+                              
+                              >
+                              
+                            </div>
+
+
+                            <div class="form-group">
+                              <label>Upload Pass Foto Pemain 7 (Optional)</label>
+                              <input 
+                              accept="image/png, image/gif, image/jpeg"
+                              type="file"
+                              name="fotopemainbasket7"
+                              class="form-control"
+                              id="fotopemainbasket7"
+                              
+                              >
+                          </div>
+
+                            <div class="form-group">
+                              <label>Nama Pemain 8 (Optional)</label>
+                              <input type="text" 
+                              name="namabasket8" 
+                              id="namabasket8"
+                              class="form-control"
+                              placeholder="Masukan Nama Lengkap Pemain 8"
+                              
+                              >
+                              
+                            </div>
+
+                            <div class="form-group">
+                              <label>Upload Pass Foto Pemain 8 (Optional)</label>
+                              <input 
+                              accept="image/png, image/gif, image/jpeg"
+                              type="file"
+                              name="fotopemainbasket8"
+                              class="form-control"
+                              id="fotopemainbasket8"
+                              
+                              >
+                          </div>
+
+                            <div class="form-group">
+                              <label>Nama Pemain 9 (Optional)</label>
+                              <input type="text" 
+                              name="namabasket9" 
+                              id="namabasket9"
+                              class="form-control"
+                              placeholder="Masukan Nama Lengkap Pemain 9"
+                              
+                              >
+                              
+                            </div>
+
+                            <div class="form-group">
+                              <label>Upload Pass Foto Pemain 9 (Optional)</label>
+                              <input 
+                              accept="image/png, image/gif, image/jpeg"
+                              type="file"
+                              name="fotopemainbasket9"
+                              class="form-control"
+                              id="fotopemainbasket9"
+                              >
+                          </div>
+
+                          <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" 
+                            type="checkbox" 
+                            id="customCheckbox2" 
+                            value="option1">
+                            <label 
+                            for="customCheckbox2" 
+                            class="custom-control-label">Dengan ini saya telah membaca, mengetahui, memahami, serta akan mematuhi juklak juknis
+                            yang berlaku dan saya bersedia menjadi peserta dalam acara Youth Project VIII
+                          </label>
+                          </div>
+
+                          </div>
+                          <div class="col-md-6">
+                            <button type="submit" class="btn btn-warning">
+                              <strong>
+                                Daftar & Pilih Metode pembayaran
+                              </strong>
+                              <a href="#"></a>
+                            </button>
+                            <!-- /.form-group -->
+                          </div>
+                          <!-- /.row -->
+                          
+                          
+                          
+                          
+                          <!-- /.col -->
+                         
+                        </div>
+                        <!-- /.row -->
+                      </div>
+                      <!-- /.card-body -->
+                      
+                    </div>
+                  </form>
+                </div>
+
+                </section>
+                <!-- /.content-wrapper -->
+
+                <footer class="main-footer">
+                  <strong
+                  >Copyright &copy; 2024
+                  <a href="https://sma-ypunila.sch.id/">|| SMA YP UNILA </a>.</strong
+                  >
+                  All rights reserved.
+                  <div class="float-right d-none d-sm-inline-block">
+                    <b>Version</b> 3.2.0
+                  </div>
+                </footer>
+            </div>
+          
+        
+        
+      <!-- Control Sidebar -->
+      <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+      </aside>
+   
+      <!-- /.control-sidebar -->
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+      $.widget.bridge("uibutton", $.ui.button);
+    </script>
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ChartJS -->
+    <script src="plugins/chart.js/Chart.min.js"></script>
+    <!-- Sparkline -->
+    <script src="plugins/sparklines/sparkline.js"></script>
+    <!-- JQVMap -->
+    <script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+    <script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="plugins/moment/moment.min.js"></script>
+    <script src="plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Summernote -->
+    <script src="plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/adminlte.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="dist/js/demo.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="dist/js/pages/dashboard.js"></script>
+
+  </body>
+</html>
